@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Responsive Portfolio Platform</title>
+<style>
+  /* Background gradient and typography */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #f0f0f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Header styling */
+  header {
+    padding: 60px 20px 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 900;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  }
+
+  header p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+    line-height: 1.5;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+
+  /* Main button area */
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .button-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .btn {
+    background: linear-gradient(120deg, #6a11cb, #2575fc);
+    border: none;
+    color: white;
+    padding: 18px 45px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    min-width: 180px;
+    text-align: center;
+  }
+
+  .btn:hover {
+    background: linear-gradient(120deg, #2575fc, #6a11cb);
+    transform: scale(1.07);
+  }
+
+  /* Features section */
+  section.features {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    text-align: center;
+  }
+
+  section.features h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    font-weight: 800;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  }
+
+  section.features ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  section.features ul li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+  }
+
+  section.features ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #53d769;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  /* Footer styling */
+  footer {
+    background-color: rgba(0,0,0,0.15);
+    color: #ccc;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    box-shadow: inset 0 1px 2px rgba(255,255,255,0.1);
+  }
+
+  /* Responsive adjustments */
+  @media(max-width: 600px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+    .btn {
+      min-width: auto;
+      flex: 1 1 100%;
+      padding: 15px 0;
+      font-size: 1.1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Responsive Portfolio Platform</h1>
+  <p>Showcase your skills and projects with a powerful, user-friendly portfolio platform. Register or login to start building your professional online presence.</p>
+</header>
+
+<main>
+  <div class="button-group">
+    <a href="register.php" class="btn" title="Create a new account">Register</a>
+    <a href="login.php" class="btn" title="Login to your account">Login</a>
+  </div>
+
+  <section class="features" aria-label="Platform Features">
+    <h2>Platform Features</h2>
+    <ul>
+      <li>Create and customize your portfolio with projects, skills, and images</li>
+      <li>Secure user authentication with registration and login system</li>
+      <li>Responsive design for access on any device</li>
+      <li>Search and explore portfolios by other users</li>
+      <li>Easy image uploads for visual portfolio presentation</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Responsive Portfolio Platform. All rights reserved.
+</footer>
+
+</body>
+</html>
